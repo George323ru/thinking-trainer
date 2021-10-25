@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/thinking-trainer/static/css/main.bcaf26a0.chunk.css",
+    "main.css": "/thinking-trainer/static/css/main.5e4320cc.chunk.css",
     "main.js": "/thinking-trainer/static/js/main.7eaefdf2.chunk.js",
     "main.js.map": "/thinking-trainer/static/js/main.7eaefdf2.chunk.js.map",
     "runtime-main.js": "/thinking-trainer/static/js/runtime-main.097630c2.js",
@@ -10,14 +10,14 @@
     "static/js/3.bc1588d7.chunk.js": "/thinking-trainer/static/js/3.bc1588d7.chunk.js",
     "static/js/3.bc1588d7.chunk.js.map": "/thinking-trainer/static/js/3.bc1588d7.chunk.js.map",
     "index.html": "/thinking-trainer/index.html",
-    "static/css/main.bcaf26a0.chunk.css.map": "/thinking-trainer/static/css/main.bcaf26a0.chunk.css.map",
+    "static/css/main.5e4320cc.chunk.css.map": "/thinking-trainer/static/css/main.5e4320cc.chunk.css.map",
     "static/js/2.64f130f8.chunk.js.LICENSE.txt": "/thinking-trainer/static/js/2.64f130f8.chunk.js.LICENSE.txt",
     "static/media/index.css": "/thinking-trainer/static/media/Inter-Regular.c8ba52b0.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.097630c2.js",
     "static/js/2.64f130f8.chunk.js",
-    "static/css/main.bcaf26a0.chunk.css",
+    "static/css/main.5e4320cc.chunk.css",
     "static/js/main.7eaefdf2.chunk.js"
   ]
 }
