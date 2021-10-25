@@ -35,3 +35,13 @@
 .main__button:hover {
   opacity: 0.7;
 }
+
+@media all and (max-width: 520px) {
+  .main__quotes {
+    max-width: 320px;
+  }
+
+  .main__button {
+    margin-top: 66px;
+  }
+}
