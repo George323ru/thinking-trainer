@@ -8,8 +8,10 @@ const App = () => {
 
   const handleChange = () => {
     let randomNumber = Math.floor(Math.random() * quotes.length);
+    console.log(quotes[randomNumber])
+    console.log(randomIndexQuotes[0])
 
-    if (randomNumber === randomIndexQuotes.randomIndex) {
+    if (quotes[randomNumber] === randomIndexQuotes[0]) {
       if (randomNumber === quotes.length - 1) {
         randomNumber = randomNumber - 1;
       }
