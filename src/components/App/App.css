@@ -9,6 +9,7 @@
 
 .main__quotes {
   max-width: 440px;
+  height: 100px;
   line-height: 1.3;
   font-size: 18px;
   text-align: center;
