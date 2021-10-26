@@ -1,0 +1,26 @@
+.main__button {
+  border-radius: 3px;
+  margin-top: 20px;
+  border: none;
+  width: 173px;
+  height: 44px;
+  background-color: #2bade0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 1;
+  outline: none;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.main__button:hover {
+  opacity: 0.7;
+}
+
+@media all and (max-width: 520px) {
+  .main__button {
+    margin-top: 66px;
+  }
+}

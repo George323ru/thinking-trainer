@@ -1,31 +1,29 @@
-
 import './App.css';
-import quotes from '../../utils/array'
+import questionCentrist from '../../utils/arraysCentrist';
 import { useState } from 'react';
+import Button from '../Button/Button';
 
 const App = () => {
-  const [randomIndexQuotes, setRandomIndexQuotes] = useState([])
+  const [randomQuestionCentrist, setRandomQuestionCentrist] = useState([]);
 
   const handleChange = () => {
-    let randomNumber = Math.floor(Math.random() * quotes.length);
-    console.log(quotes[randomNumber])
-    console.log(randomIndexQuotes[0])
+    let randomNumber = Math.floor(Math.random() * questionCentrist.length);
 
-    if (quotes[randomNumber] === randomIndexQuotes[0]) {
-      if (randomNumber === quotes.length - 1) {
-        randomNumber = randomNumber - 1;
+    if (questionCentrist[randomNumber] === randomQuestionCentrist[0]) {
+      if (randomNumber === questionCentrist.length - 1) {
+        randomNumber -= 1;
       }
       randomNumber += 1;
     }
-    setRandomIndexQuotes([quotes[randomNumber]]);
+    setRandomQuestionCentrist([questionCentrist[randomNumber]]);
   }
 
   return (
     <div className="page">
       <div className="main">
-        <h1 className="main__quotes">{randomIndexQuotes}</h1>
-        <button className="main__button"
-          onClick={handleChange} >Центрист</button>
+        <h1 className="main__quotes">{randomQuestionCentrist}</h1>
+        <Button
+          onChange={handleChange} />
       </div>
     </div>
   );
