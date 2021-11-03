@@ -13,7 +13,9 @@
 
 .main__description {
   height: 140px;
+  margin: 0;
 }
+
 .main__quotes,
 .main__description {
   max-width: 440px;
@@ -24,11 +26,16 @@
 }
 
 @media all and (max-width: 520px) {
-  .main__quotes {
+  .main {
+    margin-top: 200px;
+  }
+
+  .main__quotes,
+  .main__description {
     max-width: 320px;
   }
 
-  .main__button {
-    margin-top: 66px;
+  .main__description {
+    margin-top: 35px;
   }
 }

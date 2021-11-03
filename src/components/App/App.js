@@ -7,8 +7,8 @@ import Button from '../Button/Button';
 
 const App = () => {
   const [randomQuestionCentrist, setRandomQuestionCentrist] = useState([{
-    question: '',
-    description: ''
+    question: 'Приветствую на тренажере мышления!',
+    description: 'Нажмите любую кнопку, чтобы получить вопрос'
   }]);
 
   const colorButton = {

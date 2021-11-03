@@ -20,7 +20,7 @@
 }
 
 @media all and (max-width: 520px) {
-  .main__button {
-    margin-top: 66px;
+  .main__button:first-of-type {
+    margin-top: 100px;
   }
 }
