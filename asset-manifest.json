@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/thinking-trainer/static/css/main.e21517ec.chunk.css",
-    "main.js": "/thinking-trainer/static/js/main.8c90f437.chunk.js",
-    "main.js.map": "/thinking-trainer/static/js/main.8c90f437.chunk.js.map",
+    "main.js": "/thinking-trainer/static/js/main.ec6e79ea.chunk.js",
+    "main.js.map": "/thinking-trainer/static/js/main.ec6e79ea.chunk.js.map",
     "runtime-main.js": "/thinking-trainer/static/js/runtime-main.0beaa2f1.js",
     "runtime-main.js.map": "/thinking-trainer/static/js/runtime-main.0beaa2f1.js.map",
     "static/js/2.c5950c57.chunk.js": "/thinking-trainer/static/js/2.c5950c57.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.0beaa2f1.js",
     "static/js/2.c5950c57.chunk.js",
     "static/css/main.e21517ec.chunk.css",
-    "static/js/main.8c90f437.chunk.js"
+    "static/js/main.ec6e79ea.chunk.js"
   ]
 }
