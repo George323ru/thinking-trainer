@@ -28,12 +28,14 @@ const App = () => {
   }
 
   const handleNoRepeating = (array, randomNumber) => {
+
     if (array[randomNumber] === randomQuestionCentrist[0]) {
       if (randomNumber === array.length - 1) {
         return randomNumber -= 1;
       }
       return randomNumber += 1;
     }
+    return randomNumber
   }
 
   const handleChange = (e) => {
@@ -41,15 +43,15 @@ const App = () => {
 
     if (e.target.textContent === 'Центрист') {
       randomNumber = handleRandomNumderArray(questionCentrist)
-      handleNoRepeating(questionCentrist, randomNumber)
+      randomNumber = handleNoRepeating(questionCentrist, randomNumber)
       setRandomQuestionCentrist([questionCentrist[randomNumber]]);
     } else if (e.target.textContent === 'Рефлектор') {
       randomNumber = handleRandomNumderArray(quotesReflector)
-      handleNoRepeating(quotesReflector, randomNumber)
+      randomNumber = handleNoRepeating(quotesReflector, randomNumber)
       setRandomQuestionCentrist([quotesReflector[randomNumber]]);
     } else if (e.target.textContent === 'Конструктор') {
       randomNumber = handleRandomNumderArray(quotesСonstructor)
-      handleNoRepeating(quotesСonstructor, randomNumber)
+      randomNumber = handleNoRepeating(quotesСonstructor, randomNumber)
       setRandomQuestionCentrist([quotesСonstructor[randomNumber]]);
     }
 

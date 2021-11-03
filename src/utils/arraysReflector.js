@@ -35,12 +35,6 @@ const quotesReflector = [
     question: 'Какой результат будет для вас идеальным?',
     description: 'Запишите на стикер и подумайте, почему. Если будут идеи — выделите для них по стикеру и разместите рядом.'
   },
-
-  {
-    question: '',
-    description: ''
-  },
-
 ];
 
 export default quotesReflector;
