@@ -23,7 +23,7 @@ const App = () => {
     constructor: 'Конструктор'
   }
 
-  const handleRandomNamderArray = (questionArray) => {
+  const handleRandomNumderArray = (questionArray) => {
     return Math.floor(Math.random() * questionArray.length);
   }
 
@@ -40,15 +40,15 @@ const App = () => {
     let randomNumber
 
     if (e.target.textContent === 'Центрист') {
-      randomNumber = handleRandomNamderArray(questionCentrist)
+      randomNumber = handleRandomNumderArray(questionCentrist)
       handleNoRepeating(questionCentrist, randomNumber)
       setRandomQuestionCentrist([questionCentrist[randomNumber]]);
     } else if (e.target.textContent === 'Рефлектор') {
-      randomNumber = handleRandomNamderArray(quotesReflector)
+      randomNumber = handleRandomNumderArray(quotesReflector)
       handleNoRepeating(quotesReflector, randomNumber)
       setRandomQuestionCentrist([quotesReflector[randomNumber]]);
     } else if (e.target.textContent === 'Конструктор') {
-      randomNumber = handleRandomNamderArray(quotesСonstructor)
+      randomNumber = handleRandomNumderArray(quotesСonstructor)
       handleNoRepeating(quotesСonstructor, randomNumber)
       setRandomQuestionCentrist([quotesСonstructor[randomNumber]]);
     }
