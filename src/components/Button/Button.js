@@ -1,12 +1,13 @@
 import './Button.css';
 
-const Button = ({ onChange }) => {
+const Button = ({ onChange, color }) => {
 
 
   return (
-    <button className="main__button"
-      onClick={onChange} >Центрист</button>
-
+    <button
+      className="main__button"
+      style={{ background: color }}
+      onClick={onChange}>Центрист</button>
   );
 }
 

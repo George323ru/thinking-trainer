@@ -4,7 +4,16 @@ import { useState } from 'react';
 import Button from '../Button/Button';
 
 const App = () => {
-  const [randomQuestionCentrist, setRandomQuestionCentrist] = useState([]);
+  const [randomQuestionCentrist, setRandomQuestionCentrist] = useState([{
+    question: '',
+    description: ''
+  }]);
+
+  const colorButton = {
+    colorBlue: "#2bade0",
+    colorRed: "#e34242",
+    colorBlack: "#333333"
+  }
 
   const handleChange = () => {
     let randomNumber = Math.floor(Math.random() * questionCentrist.length);
@@ -21,8 +30,16 @@ const App = () => {
   return (
     <div className="page">
       <div className="main">
-        <h1 className="main__quotes">{randomQuestionCentrist}</h1>
+        <h1 className="main__quotes">{randomQuestionCentrist[0].question}</h1>
+        <p className="main__description">{randomQuestionCentrist[0].description}</p>
         <Button
+          color={colorButton.colorBlue}
+          onChange={handleChange} />
+        <Button
+          color={colorButton.colorRed}
+          onChange={handleChange} />
+        <Button
+          color={colorButton.colorBlack}
           onChange={handleChange} />
       </div>
     </div>
