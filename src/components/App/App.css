@@ -14,13 +14,12 @@
   height: 126px;
   font-weight: 400;
   color: #ffffff;
-  font-size: 16px;
+  margin: 0 0 8px 0;
 }
 
 .main__description {
   height: 165px;
   margin: 0 0 20px;
-  font-size: 16px;
 }
 
 .main__quotes,
@@ -31,7 +30,7 @@
   justify-content: center;
   padding: 0 14px;
   box-sizing: border-box;
-
+  font-size: 16px;
   line-height: 1.3;
   text-align: center;
 }
@@ -49,6 +48,7 @@
   }
 
   .main__description {
+    height: 135px;
     margin-top: 35px;
   }
 }
