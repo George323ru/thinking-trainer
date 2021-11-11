@@ -7,9 +7,10 @@ import Button from '../Button/Button';
 
 const App = () => {
   const [randomQuestionCentrist, setRandomQuestionCentrist] = useState([{
-    question: 'Приветствую на тренажере мышления!',
-    description: 'Нажмите любую кнопку, чтобы получить вопрос'
+    question: 'Приветствую Вас!',
+    description: 'Сформулируйте вопрос и нажмите на любую кнопку'
   }]);
+  const [cardColor, setCardColor] = useState()
 
   const colorButton = {
     colorBlue: "#2bade0",
@@ -25,6 +26,7 @@ const App = () => {
 
   const handleRandomNumderArray = (questionArray) => {
     return Math.floor(Math.random() * questionArray.length);
+
   }
 
   const handleNoRepeating = (array, randomNumber) => {
@@ -41,18 +43,21 @@ const App = () => {
   const handleChange = (e) => {
     let randomNumber
 
-    if (e.target.textContent === 'Центрист') {
+    if (e.target.textContent === nameButton.centrist) {
       randomNumber = handleRandomNumderArray(questionCentrist)
       randomNumber = handleNoRepeating(questionCentrist, randomNumber)
       setRandomQuestionCentrist([questionCentrist[randomNumber]]);
-    } else if (e.target.textContent === 'Рефлектор') {
+      setCardColor(colorButton.colorBlue);
+    } else if (e.target.textContent === nameButton.reflector) {
       randomNumber = handleRandomNumderArray(quotesReflector)
       randomNumber = handleNoRepeating(quotesReflector, randomNumber)
       setRandomQuestionCentrist([quotesReflector[randomNumber]]);
-    } else if (e.target.textContent === 'Конструктор') {
+      setCardColor(colorButton.colorRed);
+    } else if (e.target.textContent === nameButton.constructor) {
       randomNumber = handleRandomNumderArray(quotesСonstructor)
       randomNumber = handleNoRepeating(quotesСonstructor, randomNumber)
       setRandomQuestionCentrist([quotesСonstructor[randomNumber]]);
+      setCardColor(colorButton.colorBlack);
     }
 
   }
@@ -60,7 +65,8 @@ const App = () => {
   return (
     <div className="page">
       <div className="main">
-        <h1 className="main__quotes">{randomQuestionCentrist[0].question}</h1>
+        <h1 className="main__quotes"
+          style={{ background: cardColor }}>{randomQuestionCentrist[0].question}</h1>
         <p className="main__description">{randomQuestionCentrist[0].description}</p>
         <Button
           color={colorButton.colorRed}
